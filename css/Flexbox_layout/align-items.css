@@ -1,0 +1,12 @@
+.alignItems {
+    display: flex;
+    max-inline-size: 160px;
+    border: 1px solid beige;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.alignItems img{
+    inline-size: 100px;
+}

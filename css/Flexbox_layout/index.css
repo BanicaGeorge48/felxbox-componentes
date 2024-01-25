@@ -1,0 +1,50 @@
+@import "./display-flex.css";
+@import "./flex-order.css";
+@import "./flex-direction.css";
+@import "./flex-wrap.css";
+@import "./flex.css";
+@import "./justify-content.css";
+@import "./align-items.css";
+
+
+
+
+
+
+:root{
+    --darkColor: rgb(8, 20, 5);
+    --lightColor: #DFFBFF;
+    --primaryColor: #00B050;
+
+
+}
+
+body {
+    background: var(--darkColor);
+    color: var(--lightColor);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+
+}
+
+a{
+    color: var(--lightColor);
+}
+
+
+.wrapper {
+    border: 1px dashed saddlebrown;
+    max-inline-size: 64rem;
+    margin: auto;
+}
+
+.box {
+    border: 5px dashed var(--primaryColor);
+    padding: 1rem;
+    counter-increment: flex-item;
+}
+
+.box::after{
+    content: counter(flex-item);
+}
+

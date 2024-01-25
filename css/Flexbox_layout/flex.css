@@ -1,0 +1,30 @@
+.flex{
+    display: flex;
+    background-color: aquamarine;
+
+}
+
+
+/* .flex > * { */
+    /* border: 5px dashed rgb(255, 255, 255) !important;
+    flex-grow: 1;
+    /* flex-shrink: ; */
+    /* flex-basis: 100px;
+    padding: 0 !important;
+    margin: 0; */ 
+/* } */
+
+
+.flex > div {
+    border: 1px dashed red ;
+
+    flex: 1;
+}
+
+
+.flex > img {
+    border: 1px dashed blue;
+    inline-size: 300px;
+    flex-shrink: 0;
+}
+
